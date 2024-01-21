@@ -36,7 +36,7 @@ async function nthFibonacci(n) {
     const cacheSize = 20;
     if (Object.keys(internalCache).length > cacheSize) {
         // Find the oldest key and remove it
-        console.log("danish");
+      
 
         const oldestKey = Object.keys(internalCache).reduce((oldest, key) => (parseInt(key) < parseInt(oldest) ? key : oldest));
         delete internalCache[oldestKey];
